@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chuck"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    tools:context=".MainActivity">
+    
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/txtJoke"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:arrowWidth="8dp"
+        app:arrowHeight="10dp"
+        app:angle="8dp"
+        app:arrowPosition="14dp"
+        app:arrowCenter="true"
+        app:arrowLocation="top"
+        app:bubbleColor="#7EC0EE"/>
+
+    <Button
+        android:id="@+id/btnJoke"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/click_to_get_jokes"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
